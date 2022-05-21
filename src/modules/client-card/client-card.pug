@@ -1,0 +1,15 @@
+mixin client-card(className, type, user, description, location)
+    div.client-card(class=className)
+        div.client-card__column(class="client-card__column--1")
+         if type == "decline"
+            span.client-card__icon(class="icon-cross")
+         else if type == "accept"
+            span.client-card__icon(class="icon-plus")
+         else if type == "payback"
+            span.client-card__icon(class="icon-download")
+        div.client-card__column(class="client-card__column--2")
+            span.client-card__user=user
+            span.client-card__description=description
+            div.client-card__location
+                span.client-card__location-icon(class="icon-location")
+                span.client-card__location-text=location

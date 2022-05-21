@@ -1,0 +1,40 @@
+include ../../offer-card/offer-card.pug
+
+-
+    var cards = [
+        {
+            class: "offer-card--lite",
+            type: "LITE",
+            amount: "15 000 ₽",
+            timeNumber: 7,
+            timeType: " дней",
+            deadline: "12 января 2022",
+            payback: "45 500 ₽"
+        },
+        {
+            class: "offer-card--basic",
+            type: "BASIC",
+            amount: "25 000 ₽",
+            timeNumber: 1,
+            timeType: " месяц",
+            deadline: "12 января 2022",
+            payback: "45 500 ₽"
+        },
+        {
+            class: "offer-card--pro",
+            type: "PRO",
+            amount: "45 000 ₽",
+            timeNumber: 1,
+            timeType: " год",
+            deadline: "12 января 2022",
+            payback: "45 500 ₽"
+        }]
+
+section.offers
+    div.offers__container
+        div.offers__content
+            h2.offers__title(class="section-title") Лучшие предложения
+            div.offers__cards
+                each item in cards
+                    +offer-card(item.class, item.type, item.amount, item.timeNumber, item.timeType, item.deadline, item.payback)
+            div.offers__warning * Расчёт не является публичной офертой и может отличаться от реальной ставки кредитора

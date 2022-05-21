@@ -1,0 +1,17 @@
+doctype html 
+html(lang="ru")
+    include pug/head.pug
+    body
+        div.wrapper 
+            include modules/sections/header/header.pug 
+            main.page 
+                include modules/sections/offers/offers.pug
+                include modules/sections/how/how.pug
+                include modules/sections/options/options.pug
+                include modules/sections/reviews/reviews.pug
+                include modules/sections/clients/clients.pug
+                include modules/sections/about/about.pug
+                include modules/sections/faq/faq.pug
+                include modules/sections/now/now.pug
+            include modules/sections/footer/footer.pug 
+        include pug/js.pug

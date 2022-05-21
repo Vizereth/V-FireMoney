@@ -1,0 +1,21 @@
+.logo {
+  &__text {
+    font-size: rem(33);
+
+    @include maxTablet {
+      font-size: rem(25);
+    }
+
+    @include maxMobile {
+      font-size: rem(20);
+    }
+
+    &--1 {
+      font-weight: 400;
+    }
+
+    &--2 {
+      font-weight: 600;
+    }
+  }
+}

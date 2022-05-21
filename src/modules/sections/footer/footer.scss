@@ -1,0 +1,359 @@
+$bg-footer: url('img/backgrounds/03.svg');
+$separator: 1px solid rgba($white, 0.2);
+
+%footer-big-title {
+  font-size: rem(18);
+  font-weight: 500;
+  line-height: math.div(21, 18);
+  text-transform: uppercase;
+}
+
+%footer-medium-title {
+  font-size: rem(18);
+  font-weight: 500;
+  line-height: math.div(21, 18);
+}
+
+%footer-text {
+  font-size: rem(13);
+  font-weight: 300;
+  line-height: math.div(16, 13);
+
+  @include maxMobile {
+    font-size: rem(12);
+  }
+}
+
+.footer {
+  background: $bg-footer center center / cover;
+  padding: 50px 0 40px 0;
+
+  @include maxTablet {
+    padding: 40px 0;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__logo {
+    @include maxLaptop {
+      grid-row: 1/2;
+      grid-column: 1/2;
+    }
+
+    @include maxMobile {
+      justify-self: center;
+
+      span {
+        font-size: rem(33);
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    border-bottom: $separator;
+    padding: 0 0 35px 0;
+
+    @include maxLaptop {
+      display: grid;
+      grid-template-rows: repeat(2, auto);
+      grid-template-columns: repeat(3, auto);
+      row-gap: 30px;
+      column-gap: 0;
+
+      border-bottom: none;
+      padding: 0;
+    }
+
+    @include maxMobile {
+      grid-template-rows: repeat(3, auto);
+      grid-template-columns: 1fr;
+      row-gap: 25px;
+    }
+  }
+
+  &__nav-list {
+    max-width: 480px;
+    flex: 1 1 auto;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    @include maxLaptop {
+      max-width: 100%;
+
+      grid-row: 2/3;
+      grid-column: 1/4;
+
+      gap: 60px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      border-top: $separator;
+      border-bottom: $separator;
+      padding: 30px 0;
+    }
+
+    @include maxMobile {
+      grid-row: 3/4;
+      grid-column: 1/2;
+
+      justify-content: space-around;
+      gap: 10px;
+    }
+  }
+
+  &__nav-link {
+    font-size: rem(18);
+    font-weight: 500;
+    line-height: math.div(21, 18);
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    @include maxMobile {
+      font-size: rem(16);
+    }
+  }
+
+  &__contact-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+    @include maxLaptop {
+      grid-row: 1/2;
+      grid-column: 2/4;
+      gap: 0;
+    }
+
+    @include maxMobile {
+      align-items: center;
+      flex-direction: column-reverse;
+      gap: 20px;
+
+      justify-self: center;
+      grid-row: 2/3;
+      grid-column: 1/2;
+    }
+  }
+
+  &__contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__contact-mail {
+    font-size: rem(13);
+    font-weight: 400;
+    line-height: math.div(15, 13);
+  }
+
+  &__contact-phone {
+    font-size: rem(22);
+    font-weight: 700;
+    line-height: math.div(26, 22);
+  }
+
+  &__contact-icon {
+    font-size: rem(19);
+  }
+
+  &__lenders,
+  &__policies {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  &__lenders-title,
+  &__policies-title {
+    @extend %footer-big-title;
+  }
+
+  &__lenders-text,
+  &__policies-text {
+    @extend %footer-text;
+  }
+
+  &__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    border-top: $separator;
+    border-bottom: $separator;
+
+    @include maxLaptop {
+      flex-direction: column;
+      justify-content: center;
+      gap: 0;
+    }
+  }
+
+  &__cards-column {
+    &--1 {
+      display: flex;
+      align-items: center;
+
+      @include maxLaptop {
+        padding: 30px 0;
+      }
+
+      @include maxMobile {
+          flex-direction: column;
+          gap: 20px;
+      }
+    }
+
+    &--2 {
+      flex: 1 1 50%;
+
+      @include maxLaptop {
+        width: 100%;
+        flex: 1 1 auto;
+      }
+    }
+  }
+
+  &__cards-title {
+    @extend %footer-medium-title;
+  }
+
+  &__cards-images {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__cards-img {
+    @include maxMobile {
+      height: 40px;
+      width: auto;
+    }
+  }
+
+  &__cards-warning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: rem(18);
+    font-weight: 300;
+    line-height: math.div(21, 18);
+
+    border: 1px solid $white;
+    padding: 30px 15px;
+
+    @include maxMobile {
+      flex-direction: column;
+    }
+  }
+
+  &__cards-warning-underline {
+    text-decoration: underline;
+  }
+
+  &__policies {
+    border-bottom: $separator;
+    padding: 0 0 40px 0;
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: space-between;
+
+    @include maxLaptop {
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  &__copyright-column {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    &--1 {
+      @include maxMobile {
+        flex-direction: column;
+      }
+    }
+
+    @include maxMobile {
+      gap: 20px;
+    }
+  }
+
+  &__copyright-icon {
+    font-size: rem(45);
+  }
+
+  &__copyright-text {
+    font-size: rem(18);
+    font-weight: 400;
+    line-height: math.div(22, 18);
+
+    @include maxLaptop {
+      text-align: center;
+    }
+  }
+
+  &__unsubscribe {
+    @extend %hover;
+
+    font-weight: 500;
+    line-height: math.div(19, 16);
+    text-transform: uppercase;
+
+    border: 1px solid $white;
+    border-radius: 8px;
+    padding: 14px 28px;
+
+    @include maxMobile {
+      padding: 12px 25px;
+    }
+  }
+
+  &__social-list {
+    display: flex;
+    gap: 20px;
+
+    li:not(:last-child) {
+      border-right: $separator;
+      padding: 0 20px 0 0;
+
+      @include maxMobile {
+        padding: 0 15px 0 0;
+      }
+    }
+
+    @include maxMobile {
+      gap: 15px;
+    }
+  }
+
+  &__social-link {
+    font-size: rem(17);
+    transition: transform $transitionDuration;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

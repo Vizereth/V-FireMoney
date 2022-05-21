@@ -1,0 +1,23 @@
+-
+    var images = [
+        "img/options/01.png",
+        "img/options/02.png",
+        "img/options/03.png",
+        "img/options/04.png",
+        "img/options/05.png"]
+
+section.options
+    div.options__container
+        div.options__content
+            h2.options__title(class="section-title") Способы получения
+            ul.options__list
+                li.options__list-item На карту
+                li.options__list-item QIWI
+                li.options__list-item Yandex Деньги
+                li.options__list-item Наличные
+            div.options__images
+                each val in images
+                    div.options__images-item
+                        img.options__images-img(src=val, alt="Receive Money")
+                        span.options__images-icon(class="icon-arrow-right-long")
+            a.options__submit(class="submit-btn") Оформить заявку

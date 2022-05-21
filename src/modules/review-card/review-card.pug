@@ -1,0 +1,15 @@
+mixin review-card(img, user, location, quote, rating)
+    div.review-card 
+        div.review-card__img(class="img-ibg")
+            img(src=img, alt="User")
+        div.review-card__user=user
+        div.review-card__location
+            span.review-card__location-icon(class="icon-location")
+            span.review-card__location-text=location
+        div.review-card__quote=quote
+        div.review-card__rating
+            -for(var i = 0; i < rating; i++)
+                span.review-card__star(class="review-card__star--active icon-star")
+            -for(var j = 0; j < 5 - rating; j++)
+                span.review-card__star(class="icon-star")
+                

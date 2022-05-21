@@ -1,0 +1,60 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+
+  @include maxMobile {
+    display: none;
+  }
+
+  &__list {
+    max-width: 470px;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &__list-link {
+    font-size: rem(18);
+    font-weight: 500;
+    line-height: math.div(21, 18);
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    @include maxTablet {
+      font-size: rem(14);
+    }
+  }
+
+  &__btn-login {
+    cursor: pointer;
+    background: $orange-1;
+
+    font-size: rem(13);
+    font-weight: 500;
+    line-height: math.div(15, 13);
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    border-radius: 8px;
+    padding: 18px 25px;
+
+    @extend %hover;
+
+    @include maxTablet {
+      display: none;
+    }
+  }
+
+  &__btn-login--small {
+    display: none;
+
+    @include maxTablet {
+      display: block;
+    }
+  }
+}

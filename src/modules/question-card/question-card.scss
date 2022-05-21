@@ -1,0 +1,79 @@
+.question-card {
+  width: 100%;
+
+  background: $white;
+  border-radius: 12px;
+
+  box-shadow: 0px 4px 44px rgba(84, 104, 123, 0.05);
+  backdrop-filter: blur(12px);
+
+  padding: 20px 33px 20px 33px;
+
+  @include maxMobile {
+      padding: 25px 20px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    transition: color $transitionDuration;
+
+    &:hover {
+      color: $orange-2;
+    }
+  }
+
+  &__title {
+    color: $black-2;
+    font-size: rem(20);
+    font-weight: 600;
+    line-height: math.div(24, 20);
+
+    @include maxMobile {
+        font-size: rem(16);
+    }
+  }
+
+  &__icon {
+    color: $blue-1;
+    font-size: rem(16);
+  }
+
+  &__text {
+    overflow: hidden;
+
+    max-height: 0;
+
+    color: $black-3;
+    font-weight: 300;
+    line-height: math.div(19, 16);
+
+    transition: max-height 0.25s ease-in;
+
+    @include maxMobile {
+        font-size: rem(14);
+    }
+  }
+}
+
+.question-card--active {
+  background: linear-gradient(268.87deg, #ffc83e -5.09%, #ff7347 51.96%);
+  color: $white;
+
+  .question-card__title {
+    color: $white;
+    margin: 0 0 17px 0;
+  }
+
+  .question-card__icon {
+    color: $white;
+    transform: rotate(180deg);
+  }
+
+  .question-card__text {
+    color: $white;
+  }
+}
