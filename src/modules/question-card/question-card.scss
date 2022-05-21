@@ -10,20 +10,28 @@
   padding: 20px 33px 20px 33px;
 
   @include maxMobile {
-      padding: 25px 20px;
+    padding: 25px 20px;
   }
 
   &__header {
+    cursor: pointer;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
 
-    transition: color $transitionDuration;
-
     &:hover {
-      color: $orange-2;
+      .question-card__title,
+      .question-card__icon {
+        color: $orange-1;
+      }
     }
+  }
+
+  &__title,
+  &__icon {
+    transition: color $transitionDuration;
   }
 
   &__title {
@@ -32,8 +40,12 @@
     font-weight: 600;
     line-height: math.div(24, 20);
 
+    &:hover {
+      color: $orange-1;
+    }
+
     @include maxMobile {
-        font-size: rem(16);
+      font-size: rem(16);
     }
   }
 
@@ -44,7 +56,6 @@
 
   &__text {
     overflow: hidden;
-
     max-height: 0;
 
     color: $black-3;
@@ -54,14 +65,21 @@
     transition: max-height 0.25s ease-in;
 
     @include maxMobile {
-        font-size: rem(14);
+      font-size: rem(14);
     }
   }
 }
 
 .question-card--active {
-  background: linear-gradient(268.87deg, #ffc83e -5.09%, #ff7347 51.96%);
+  background: $gradient-orange-reverse;
   color: $white;
+
+  &:hover {
+    .question-card__title,
+    .question-card__icon {
+      color: $white;
+    }
+  }
 
   .question-card__title {
     color: $white;

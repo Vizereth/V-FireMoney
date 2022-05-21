@@ -39,8 +39,6 @@
   }
 
   &__buttons {
-    @extend %hover;
-
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -49,6 +47,8 @@
   }
 
   &__all {
+    @extend %hover;
+
     border: 1px solid $gray-8;
     border-radius: 8px;
 

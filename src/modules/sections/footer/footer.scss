@@ -1,5 +1,5 @@
-$bg-footer: url('img/backgrounds/03.svg');
-$separator: 1px solid rgba($white, 0.2);
+$bg-footer: url('../img/backgrounds/03.svg');
+$footer-separator: 1px solid rgba($white, 0.2);
 
 %footer-big-title {
   font-size: rem(18);
@@ -59,7 +59,7 @@ $separator: 1px solid rgba($white, 0.2);
     justify-content: space-between;
     gap: 10px;
 
-    border-bottom: $separator;
+    border-bottom: $footer-separator;
     padding: 0 0 35px 0;
 
     @include maxLaptop {
@@ -99,8 +99,8 @@ $separator: 1px solid rgba($white, 0.2);
       justify-content: center;
       flex-wrap: wrap;
 
-      border-top: $separator;
-      border-bottom: $separator;
+      border-top: $footer-separator;
+      border-bottom: $footer-separator;
       padding: 30px 0;
     }
 
@@ -194,8 +194,8 @@ $separator: 1px solid rgba($white, 0.2);
     justify-content: space-between;
     gap: 20px;
 
-    border-top: $separator;
-    border-bottom: $separator;
+    border-top: $footer-separator;
+    border-bottom: $footer-separator;
 
     @include maxLaptop {
       flex-direction: column;
@@ -268,7 +268,7 @@ $separator: 1px solid rgba($white, 0.2);
   }
 
   &__policies {
-    border-bottom: $separator;
+    border-bottom: $footer-separator;
     padding: 0 0 40px 0;
   }
 
@@ -335,7 +335,7 @@ $separator: 1px solid rgba($white, 0.2);
     gap: 20px;
 
     li:not(:last-child) {
-      border-right: $separator;
+      border-right: $footer-separator;
       padding: 0 20px 0 0;
 
       @include maxMobile {

@@ -10,9 +10,6 @@
 
 //&display=swap - add to the font url if google fonts are connected via VSCode plugin
 
-// Connect local fonts if any
-//@import "fonts/fonts";
-
 /* ================= Icon Font ================= */
 
 // Connect icon font if any
@@ -31,7 +28,7 @@ $fontSize: rem(16); // 16 - default font size
 
 // Colors
 
-$transitionDuration: 0.25s ease-in;
+$transitionDuration: 0.2s ease-in;
 
 /* ================= General Settings ================= */
 
@@ -182,5 +179,3 @@ This will be applied to all elements with class *__container. E.g. header__conta
 @import '../modules/sections/faq/faq';
 @import '../modules/sections/now/now';
 
-// Connect page styles
-@import 'home';

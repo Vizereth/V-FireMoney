@@ -123,9 +123,11 @@
 
 %hover {
   @include minTablet {
+    transition: opacity $transitionDuration;
+
     &:hover {
       opacity: 0.75;
-      transition: $transitionDuration;
+      
     }
   }
 }
