@@ -10512,12 +10512,8 @@ button {
 }
 
 a {
+  cursor: pointer;
   color: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  text-transform: inherit;
-  text-decoration: inherit;
 }
 
 a:link,
@@ -10742,9 +10738,9 @@ This will be applied to all elements with class *__container. E.g. header__conta
   color: rgb(60, 66, 96);
   font-size: 2rem;
   font-weight: 500;
-  -webkit-transition: color 0.25s ease-in;
-  -o-transition: color 0.25s ease-in;
-  transition: color 0.25s ease-in;
+  -webkit-transition: color 0.2s ease-in;
+  -o-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
 }
 
 .mobile-menu__list-link:hover {
@@ -11228,6 +11224,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 .question-card__header {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11238,13 +11235,18 @@ This will be applied to all elements with class *__container. E.g. header__conta
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 10px;
-  -webkit-transition: color 0.25s ease-in;
-  -o-transition: color 0.25s ease-in;
-  transition: color 0.25s ease-in;
 }
 
-.question-card__header:hover {
-  color: rgb(242, 137, 37);
+.question-card__header:hover .question-card__title,
+.question-card__header:hover .question-card__icon {
+  color: rgb(255, 123, 0);
+}
+
+.question-card__title,
+.question-card__icon {
+  -webkit-transition: color 0.2s ease-in;
+  -o-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
 }
 
 .question-card__title {
@@ -11252,6 +11254,10 @@ This will be applied to all elements with class *__container. E.g. header__conta
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.2;
+}
+
+.question-card__title:hover {
+  color: rgb(255, 123, 0);
 }
 
 .question-card__icon {
@@ -11271,8 +11277,13 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 .question-card--active {
-  background: -o-linear-gradient(181.13deg, #ffc83e -5.09%, #ff7347 51.96%);
-  background: linear-gradient(268.87deg, #ffc83e -5.09%, #ff7347 51.96%);
+  background: -o-linear-gradient(181.13deg, #FFC83E -5.09%, #FF7347 51.96%);
+  background: linear-gradient(268.87deg, #FFC83E -5.09%, #FF7347 51.96%);
+  color: rgb(255, 255, 255);
+}
+
+.question-card--active:hover .question-card__title,
+.question-card--active:hover .question-card__icon {
   color: rgb(255, 255, 255);
 }
 
@@ -11328,14 +11339,24 @@ This will be applied to all elements with class *__container. E.g. header__conta
   text-align: center;
 }
 
-.no-webp .header {
-  background: url("../img/backgrounds/01.jpg") center bottom; }
-
 .header {
   position: relative;
+  overflow: hidden;
+  background: url("../img/backgrounds/01.svg");
+  background-position: center top;
   background-size: cover;
   padding: 36px 0 0 0;
   margin: 0 0 50px 0;
+}
+
+.header__bg-img {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  z-index: 5;
+  -webkit-transform: translateX(-45%);
+      -ms-transform: translateX(-45%);
+          transform: translateX(-45%);
 }
 
 .header__content {
@@ -11491,7 +11512,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 .footer {
-  background: url("img/backgrounds/03.svg") center center/cover;
+  background: url("../img/backgrounds/03.svg") center center/cover;
   padding: 50px 0 40px 0;
 }
 
@@ -11711,11 +11732,11 @@ This will be applied to all elements with class *__container. E.g. header__conta
 
 .footer__social-link {
   font-size: 1.0625rem;
-  -webkit-transition: -webkit-transform 0.25s ease-in;
-  transition: -webkit-transform 0.25s ease-in;
-  -o-transition: transform 0.25s ease-in;
-  transition: transform 0.25s ease-in;
-  transition: transform 0.25s ease-in, -webkit-transform 0.25s ease-in;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  -o-transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
 }
 
 .footer__social-link:hover {
@@ -12003,10 +12024,8 @@ This will be applied to all elements with class *__container. E.g. header__conta
   padding: 20px 30px;
 }
 
-.no-webp .clients {
-  background: url("../img/backgrounds/02.png") center center/cover; }
-
 .clients {
+  background: url("../img/backgrounds/02.svg") center center/cover;
   padding: 55px 0;
   margin: 0 0 55px 0;
 }
@@ -12550,18 +12569,64 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 @media screen and (min-width: 61.99875em) {
-  .reviews__buttons:hover,
+  .reviews__all,
+  .footer__unsubscribe,
+  .submit-btn,
+  .menu__btn-login {
+    -webkit-transition: opacity 0.2s ease-in;
+    -o-transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
+  }
+
+  .reviews__all:hover,
   .footer__unsubscribe:hover,
   .submit-btn:hover,
   .menu__btn-login:hover {
     opacity: 0.75;
-    -webkit-transition: 0.25s ease-in;
-    -o-transition: 0.25s ease-in;
-    transition: 0.25s ease-in;
   }
 }
 
 @media screen and (max-width: 89.99875em) {
+  .header {
+    background-position: right 44% center;
+  }
+
+  .header__bg-img {
+    display: none;
+  }
+
+  .header__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+    padding: 30px 0;
+  }
+
+  .header__column--1 {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+
+  .header__description {
+    margin: 0 0 10px 0;
+  }
+
+  .header__warning {
+    max-width: 100%;
+  }
+
   .footer__logo {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
@@ -12709,31 +12774,22 @@ This will be applied to all elements with class *__container. E.g. header__conta
   }
 
   .header {
+    background: url("../img/backgrounds/01-mobile.svg") right center/cover;
     padding: 30px 0 0 0;
   }
 
-  .header__content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 40px;
-    padding: 30px 0;
+  .header__bg-img {
+    display: block;
+    left: -110px;
+    bottom: -2%;
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%);
   }
 
-  .header__column--1 {
-    max-width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
+  .header__column--2 {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
 
   .header__banner {
@@ -12746,14 +12802,6 @@ This will be applied to all elements with class *__container. E.g. header__conta
   .header__title {
     font-size: 2.5rem;
     margin: 0 0 5px 0;
-  }
-
-  .header__description {
-    margin: 0 0 10px 0;
-  }
-
-  .header__warning {
-    max-width: 100%;
   }
 
   .footer {
@@ -12896,7 +12944,18 @@ This will be applied to all elements with class *__container. E.g. header__conta
   }
 
   .header {
+    background: url("../img/backgrounds/01.svg") right top/cover;
     padding: 14px 0 0 0;
+  }
+
+  .header__bg-img {
+    display: none;
+  }
+
+  .header__column--2 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 
   .footer__lenders-text,
@@ -13142,8 +13201,4 @@ This will be applied to all elements with class *__container. E.g. header__conta
   }
 }
 
-.webp .header { background: url(../img/backgrounds/01.webp) center bottom; }
-
 .webp .header__banner:before { background: url(../img/logo.webp); }
-
-.webp .clients { background: url(../img/backgrounds/02.webp) center center/cover; }
