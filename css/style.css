@@ -21,17 +21,17 @@
 
 .icon-cross:before {
   content: "\e90f";
-  color: rgb(147, 160, 171);
+  color: #93a0ab;
 }
 
 .icon-download:before {
   content: "\e910";
-  color: rgb(255, 175, 71);
+  color: #ffaf47;
 }
 
 .icon-plus:before {
   content: "\e911";
-  color: rgb(255, 175, 71);
+  color: #ffaf47;
 }
 
 .icon-arrow-right-long:before {
@@ -40,7 +40,7 @@
 
 .icon-location:before {
   content: "\e90d";
-  color: rgb(255, 161, 71);
+  color: #ffa147;
 }
 
 .icon-star:before {
@@ -73,22 +73,22 @@
 
 .icon-envelope:before {
   content: "\e906";
-  color: rgb(255, 255, 255);
+  color: white;
 }
 
 .icon-facebook:before {
   content: "\e907";
-  color: rgb(255, 255, 255);
+  color: white;
 }
 
 .icon-instagram:before {
   content: "\e908";
-  color: rgb(255, 255, 255);
+  color: white;
 }
 
 .icon-phone:before {
   content: "\e909";
-  color: rgb(255, 255, 255);
+  color: white;
 }
 
 .icon-ruble:before {
@@ -97,7 +97,7 @@
 
 .icon-youtube:before {
   content: "\e90b";
-  color: rgb(255, 255, 255);
+  color: white;
 }
 
 @font-face {
@@ -10486,7 +10486,7 @@ body {
 }
 
 body {
-  color: rgb(255, 255, 255);
+  color: white;
   line-height: 1;
   font-family: "Rubik", sans-serif;
   font-size: 1rem;
@@ -10501,6 +10501,7 @@ body {
 input,
 button,
 textarea {
+  background: transparent;
   font-family: "Rubik", sans-serif;
   font-size: inherit;
 }
@@ -10543,6 +10544,10 @@ h6 {
   font-size: inherit;
 }
 
+body {
+  background: white;
+}
+
 .lock body {
   overflow: hidden;
   -ms-touch-action: none;
@@ -10558,7 +10563,7 @@ h6 {
 body::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.15);
           box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.15);
-  background-color: rgba(255, 182, 72, 0);
+  background-color: #ffb64800;
 }
 
 body::-webkit-scrollbar {
@@ -10569,7 +10574,7 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   border: none;
   border-radius: 25px;
-  background: rgb(242, 137, 37);
+  background: #f28925;
 }
 
 /* ================= Page Wrapper ================= */
@@ -10688,7 +10693,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
 
 .menu__btn-login {
   cursor: pointer;
-  background: rgb(255, 123, 0);
+  background: #ff7b00;
   font-size: 0.8125rem;
   font-weight: 500;
   line-height: 1.1538461538;
@@ -10708,7 +10713,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
 
 .mobile-menu__list {
   display: none;
-  background: rgb(255, 255, 255);
+  background: white;
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -10735,7 +10740,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 .mobile-menu__list-link {
-  color: rgb(60, 66, 96);
+  color: #3c4260;
   font-size: 2rem;
   font-weight: 500;
   -webkit-transition: color 0.2s ease-in;
@@ -10744,11 +10749,11 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 .mobile-menu__list-link:hover {
-  color: rgb(255, 123, 0);
+  color: #ff7b00;
 }
 
 .mobile-menu__btn-login {
-  background: rgb(255, 123, 0);
+  background: #ff7b00;
   border-radius: 8px;
   font-size: 0.8125rem;
   font-weight: 500;
@@ -10758,7 +10763,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 .mobile-menu__icon-menu-wrapper {
-  background: rgb(255, 255, 255);
+  background: white;
   border-radius: 8px;
   width: 40px;
   height: 40px;
@@ -10809,7 +10814,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 .quick-form__form-row-title {
-  color: rgb(69, 81, 95);
+  color: #45515f;
   font-size: 1.375rem;
   font-weight: 400;
   line-height: 1.1818181818;
@@ -10823,7 +10828,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: rgb(192, 194, 197);
+  color: #c0c2c5;
   font-size: 0.8125rem;
   font-weight: 400;
   line-height: 1.1538461538;
@@ -10870,21 +10875,21 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 .quick-form__cell-title {
-  color: rgb(69, 81, 95);
+  color: #45515f;
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.2142857143;
 }
 
 .quick-form__cell-amount {
-  color: rgb(242, 137, 37);
+  color: #f28925;
   font-size: 1.125rem;
   font-weight: 500;
   line-height: 1.1666666667;
 }
 
 .quick-form .noUi-target {
-  background: rgb(236, 236, 236);
+  background: #ececec;
   border: none;
   border-radius: 8px;
   height: 7px;
@@ -10895,7 +10900,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
 .quick-form .noUi-tooltip {
   background: none;
   border: none;
-  color: rgb(69, 81, 95);
+  color: #45515f;
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.2;
@@ -10904,7 +10909,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
 
 .quick-form .noUi-handle.noUi-handle-lower {
   cursor: pointer;
-  background: rgb(255, 161, 71);
+  background: #ffa147;
   border: none;
   border-radius: 50%;
   width: 21px;
@@ -10952,7 +10957,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
 .offer-card {
   position: relative;
   overflow: hidden;
-  background: rgb(255, 255, 255);
+  background: white;
   border-radius: 22px;
   width: 408px;
   max-width: 408px;
@@ -11014,7 +11019,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 .offer-card__text {
-  color: rgb(69, 81, 95);
+  color: #45515f;
 }
 
 .offer-card__cell {
@@ -11024,13 +11029,13 @@ This will be applied to all elements with class *__container. E.g. header__conta
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  color: rgb(69, 81, 95);
+  color: #45515f;
   font-size: 0.9375rem;
 }
 
 .offer-card__cell-icon {
   font-size: 0.75rem;
-  color: rgb(255, 123, 0);
+  color: #ff7b00;
   margin: 0 10px 0 0;
 }
 
@@ -11043,34 +11048,34 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 .offer-card--lite .offer-card__type {
-  background: rgb(255, 200, 62);
+  background: #ffc83e;
 }
 
 .offer-card--lite .offer-card__amount,
 .offer-card--lite .offer-card__time {
-  color: rgb(255, 200, 62);
+  color: #ffc83e;
 }
 
 .offer-card--basic .offer-card__type {
-  background: rgb(255, 123, 0);
+  background: #ff7b00;
 }
 
 .offer-card--basic .offer-card__amount,
 .offer-card--basic .offer-card__time {
-  color: rgb(255, 123, 0);
+  color: #ff7b00;
 }
 
 .offer-card--pro .offer-card__type {
-  background: rgb(250, 89, 20);
+  background: #fa5914;
 }
 
 .offer-card--pro .offer-card__amount,
 .offer-card--pro .offer-card__time {
-  color: rgb(250, 89, 20);
+  color: #fa5914;
 }
 
 .review-card {
-  background: rgb(255, 255, 255);
+  background: white;
   border-radius: 22px;
   min-width: 360px;
   max-width: 408px;
@@ -11093,7 +11098,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 .review-card__user {
-  color: rgb(69, 81, 95);
+  color: #45515f;
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.1666666667;
@@ -11109,18 +11114,18 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 .review-card__location-text {
-  color: rgb(147, 160, 171);
+  color: #93a0ab;
   font-size: 0.9375rem;
   font-weight: 400;
   line-height: 1.2;
 }
 
 .review-card__location-icon:before {
-  color: rgb(255, 161, 71);
+  color: #ffa147;
 }
 
 .review-card__quote {
-  color: rgb(83, 100, 115);
+  color: #536473;
   font-weight: 300;
   line-height: 1.1875;
   margin: 0 0 27px 0;
@@ -11134,15 +11139,15 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 .review-card__star:before {
-  color: rgb(199, 206, 214);
+  color: #c7ced6;
 }
 
 .review-card__star--active:before {
-  color: rgb(254, 179, 0);
+  color: #feb300;
 }
 
 .client-card {
-  background: rgb(255, 255, 255);
+  background: white;
   border-radius: 22px;
   -webkit-box-shadow: 0px 4px 44px rgba(84, 104, 123, 0.05);
           box-shadow: 0px 4px 44px rgba(84, 104, 123, 0.05);
@@ -11172,13 +11177,13 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 .client-card__user {
-  color: rgb(69, 81, 95);
+  color: #45515f;
   font-weight: 500;
   line-height: 1.1875;
 }
 
 .client-card__description {
-  color: rgb(83, 100, 115);
+  color: #536473;
   font-weight: 300;
   line-height: 1.1875;
 }
@@ -11194,7 +11199,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 .client-card__location-text {
-  color: rgb(147, 160, 171);
+  color: #93a0ab;
   font-size: 0.9375rem;
   font-weight: 400;
   line-height: 1.2;
@@ -11214,7 +11219,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
 
 .question-card {
   width: 100%;
-  background: rgb(255, 255, 255);
+  background: white;
   border-radius: 12px;
   -webkit-box-shadow: 0px 4px 44px rgba(84, 104, 123, 0.05);
           box-shadow: 0px 4px 44px rgba(84, 104, 123, 0.05);
@@ -11239,7 +11244,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
 
 .question-card__header:hover .question-card__title,
 .question-card__header:hover .question-card__icon {
-  color: rgb(255, 123, 0);
+  color: #ff7b00;
 }
 
 .question-card__title,
@@ -11250,25 +11255,25 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 .question-card__title {
-  color: rgb(69, 81, 95);
+  color: #45515f;
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.2;
 }
 
 .question-card__title:hover {
-  color: rgb(255, 123, 0);
+  color: #ff7b00;
 }
 
 .question-card__icon {
-  color: rgb(3, 29, 105);
+  color: #031d69;
   font-size: 1rem;
 }
 
 .question-card__text {
   overflow: hidden;
   max-height: 0;
-  color: rgb(83, 100, 115);
+  color: #536473;
   font-weight: 300;
   line-height: 1.1875;
   -webkit-transition: max-height 0.25s ease-in;
@@ -11279,28 +11284,28 @@ This will be applied to all elements with class *__container. E.g. header__conta
 .question-card--active {
   background: -o-linear-gradient(181.13deg, #FFC83E -5.09%, #FF7347 51.96%);
   background: linear-gradient(268.87deg, #FFC83E -5.09%, #FF7347 51.96%);
-  color: rgb(255, 255, 255);
+  color: white;
 }
 
 .question-card--active:hover .question-card__title,
 .question-card--active:hover .question-card__icon {
-  color: rgb(255, 255, 255);
+  color: white;
 }
 
 .question-card--active .question-card__title {
-  color: rgb(255, 255, 255);
+  color: white;
   margin: 0 0 17px 0;
 }
 
 .question-card--active .question-card__icon {
-  color: rgb(255, 255, 255);
+  color: white;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
 .question-card--active .question-card__text {
-  color: rgb(255, 255, 255);
+  color: white;
 }
 
 .submit-btn {
@@ -11332,7 +11337,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 .section-title {
-  color: rgb(69, 81, 95);
+  color: #45515f;
   font-size: 2.375rem;
   font-weight: 600;
   line-height: 1.1842105263;
@@ -11382,7 +11387,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
 
 .header__banner {
   position: relative;
-  background: rgb(255, 255, 255);
+  background: white;
   border-radius: 12px;
   padding: 15px 20px 15px 75px;
   margin: 0 0 20px 0;
@@ -11392,7 +11397,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  color: rgb(60, 66, 96);
+  color: #3c4260;
   font-size: 1.375rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -11456,7 +11461,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
   position: absolute;
   width: 100%;
   height: 0.1875rem;
-  background-color: rgb(255, 123, 0);
+  background-color: #ff7b00;
   border-radius: 8px;
 }
 
@@ -11667,7 +11672,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
   font-size: 1.125rem;
   font-weight: 300;
   line-height: 1.1666666667;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid white;
   padding: 30px 15px;
 }
 
@@ -11713,7 +11718,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
   font-weight: 500;
   line-height: 1.1875;
   text-transform: uppercase;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid white;
   border-radius: 8px;
   padding: 14px 28px;
 }
@@ -11774,7 +11779,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 .offers__warning {
-  color: rgb(69, 81, 95);
+  color: #45515f;
   font-size: 0.8125rem;
   font-weight: 300;
   line-height: 1.4615384615;
@@ -11833,12 +11838,12 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 .how__step--active .how__step-icon {
-  color: rgb(255, 161, 71);
+  color: #ffa147;
 }
 
 .how__step--active .how__step-bullet {
-  background: rgb(255, 161, 71);
-  color: rgb(255, 255, 255);
+  background: #ffa147;
+  color: white;
 }
 
 .how__step--active .how__step-bullet:before {
@@ -11846,7 +11851,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 .how__step-icon {
-  color: rgb(207, 213, 221);
+  color: #cfd5dd;
   font-size: 3.75rem;
   margin: 0 0 35px 0;
 }
@@ -11865,7 +11870,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: rgb(214, 211, 211);
+  color: #d6d3d3;
   font-size: 1rem;
   font-weight: 500;
   margin: 0 0 20px 0;
@@ -11888,7 +11893,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 .how__step-description {
-  color: rgb(69, 81, 95);
+  color: #45515f;
   font-size: 1.125rem;
   font-weight: 300;
   line-height: 1.3333333333;
@@ -11925,7 +11930,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
   display: -ms-flexbox;
   display: flex;
   gap: 7px;
-  color: rgb(69, 81, 95);
+  color: #45515f;
   font-size: 0.8125rem;
   font-weight: 300;
   line-height: 1.4615384615;
@@ -11968,7 +11973,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 .options__images-icon:before {
-  color: rgb(175, 175, 175);
+  color: #afafaf;
 }
 
 .reviews {
@@ -12015,9 +12020,9 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 .reviews__all {
-  border: 1px solid rgb(201, 210, 221);
+  border: 1px solid #c9d2dd;
   border-radius: 8px;
-  color: rgb(69, 81, 95);
+  color: #45515f;
   font-weight: 500;
   line-height: 1.1875;
   text-transform: uppercase;
@@ -12045,7 +12050,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 .clients__title {
-  color: rgb(255, 255, 255);
+  color: white;
   font-size: 2.375rem;
   font-weight: 600;
   line-height: 1.1842105263;
@@ -12092,7 +12097,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
 .about__card {
   background: white;
   max-width: 625px;
-  border: 1px solid rgb(248, 235, 235);
+  border: 1px solid #f8ebeb;
   border-radius: 22px;
   -webkit-box-shadow: 0px 4px 44px rgba(84, 104, 123, 0.05);
           box-shadow: 0px 4px 44px rgba(84, 104, 123, 0.05);
@@ -12102,7 +12107,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 .about__card-title {
-  color: rgb(69, 81, 95);
+  color: #45515f;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.1666666667;
@@ -12110,7 +12115,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 .about__card-text {
-  color: rgb(83, 100, 115);
+  color: #536473;
   font-weight: 300;
   line-height: 1.1875;
 }
@@ -12174,7 +12179,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
 }
 
 .now__text {
-  color: rgb(83, 100, 115);
+  color: #536473;
   font-size: 1.6875rem;
   font-weight: 400;
   line-height: 1.3333333333;
