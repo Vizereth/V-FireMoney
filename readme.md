@@ -1,4 +1,4 @@
-### HTML Template - Fire Money
+# HTML Template - Fire Money
 
 ## Deploy
 
