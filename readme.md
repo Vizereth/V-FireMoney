@@ -2,7 +2,7 @@
 
 ## Deploy
 
-https://sophrona.github.io/V-FireMoney
+https://vizereth.github.io/V-FireMoney
 
 ## Project setup
 ```
