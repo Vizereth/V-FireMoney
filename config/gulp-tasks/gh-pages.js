@@ -9,7 +9,7 @@ export const deployGH = (done) => {
 		path.resolve(distPath),
 		{
 			branch: 'gh-pages',
-			repo: 'https://github.com/vizereth/template-microloan-firemoney.git', 
+			repo: 'https://github.com/vizereth/template-loan-firemoney.git', 
 			message: 'Deploy to gh-pages',
 		},
 		(err) => {

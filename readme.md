@@ -2,7 +2,7 @@
 
 ## Deploy
 
-https://vizereth.github.io/template-microloan-firemoney
+https://vizereth.github.io/template-loan-firemoney
 
 ## Project setup
 ```
