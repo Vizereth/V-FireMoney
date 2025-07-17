@@ -1,8 +1,8 @@
-# HTML Template - Fire Money
+# Landing Page - Fire Money
 
 ## Deploy
 
-https://vizereth.github.io/V-FireMoney
+https://vizereth.github.io/template-microloan-firemoney
 
 ## Project setup
 ```
